@@ -1,0 +1,25 @@
+# Exercise 6: Brute Force Attack - 30 Marks.
+print("Exercise 6: Brute Force Attack - 30 Marks")
+password = 12345
+attempts = 0
+
+while attempts < 5:
+    try: # This statement allows you to write a code that might raise an error without crashing the program.
+            user_input = int(input("To proceed to the next exercise, please enter the secret passcode: "))
+            attempts += 1
+
+            if user_input == password:
+                print("Access Granted! Clear to proceed.")
+                break # Breaks the loop if the correct password is inputted.
+            if attempts == 1:   # Will count the ammount of attempts and display how many attempts the user has left.
+                print("Incorrect! 4 more attempts.")
+            elif attempts == 2:
+                print("Incorrect! 3 more attempts.")
+            elif attempts == 3:
+                print("Incorrect! WARNING 2 MORE ATTEMPTS.")
+            elif attempts == 4:
+                print("WARNING 1 ATTEMPT LEFT!")
+    except ValueError: # This function executes when the user types anything other than a number.
+            print("This is invalid, please use digits.")
+else: # Once there will be 0 attempts left the program will end.
+    print("You have reached the maximum attempts, Please try again in the next 4 hours.")

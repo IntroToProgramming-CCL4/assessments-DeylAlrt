@@ -1,0 +1,12 @@
+# Exercise 7: Some Counting - 20 Marks.
+print("Exercise 7: Some Counting - 20 Marks")
+for a in range(0, 51):      # Counts up from 0 to 50 in increments of 1.
+    print ("Counting to", a)
+for b in range(51, -1, -1): # Counts down from 50 to 0 in decrements of 1.
+    print("Counting to", b)
+for c in range(30, 51):     # Counts up from 30 to 50 in increments of 1.
+    print("Counting to", c)
+for d in range(50, 9, -2):  # Counts down from 50 to 10 in decrements of 2.
+    print("Counting to", d) 
+for e in range(100, 201, 5):# Counts up from 100 to 200 in increments of 5.
+    print("Counting to", e)

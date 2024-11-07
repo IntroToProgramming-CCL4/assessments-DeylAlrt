@@ -1,5 +1,5 @@
 # Exercise 7: Some Counting - 20 Marks.
-print("Exercise 7: Some Counting - 20 Marks")
+
 for a in range(0, 51):      # Counts up from 0 to 50 in increments of 1.
     print ("Counting to", a)
 for b in range(51, -1, -1): # Counts down from 50 to 0 in decrements of 1.

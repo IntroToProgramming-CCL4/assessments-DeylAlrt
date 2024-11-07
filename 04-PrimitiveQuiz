@@ -1,0 +1,25 @@
+# Exercise 4: Primitive Quiz - 30 Marks.
+print("Exercise 4: Primitive Quiz - 30 Marks")
+answers = ["Paris", "Athens", "Madrid", "London", "Brussels", "Berlin",
+        "Oslo", "Amsterdam", "Vienna", "Monaco", "Andorra la Vella", "Helsinki",
+        "Dublin", "Tirana"]
+correct_answers = set()
+attempts = 0
+
+while attempts < 10 : # Once the attempts reaches 10 it will end the loop.
+    user_input = input("What are the capitals in European countries?\nName at least 10: ").lower()
+    attempts += 1 # Adds 1 attempt whenever the user has input something.
+
+    if user_input in [capital.lower() for capital in answers]:  
+        if user_input in correct_answers:  # this function checks if the answer was already given
+            print("You have already answered this try again.")
+        else:                 
+            correct_answers.add(user_input)
+            print("Correct! Name more.")
+    else:
+        print("Incorrect! Try again.")
+score = len(correct_answers) # Checks how many correct answer the user has.     
+if score >= 7: # If the score is greater or equal to 7 it will display as passed.
+    print(f"You have answered at least 10.\nCongratulations you passed!\nScore: {(score)}/10")
+else: # If the score is lower than 7 then it will display as failed.
+    print(f"You have answered at least 10.\nYou failed! Study more.\nScore: {(score)}/10")

@@ -1,5 +1,4 @@
 # Exercise 5: Days of the Month - 30 Marks.
-print("Exercise 5: Days of the Month - 30 Marks")
 
 # List of the months.
 calendar = {

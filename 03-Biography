@@ -1,5 +1,5 @@
 # Exercise 3: Biography - 25 Marks.
-print("Exercise 3: Biography - 25 Marks")
+
 name = "Dale Alerta"
 age = 18
 hometown = "Philippine"

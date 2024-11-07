@@ -1,0 +1,12 @@
+# Exercise 8: Simple Search - 30 Marks.
+print("Exercise 8: Simple Search - 30 Marks.")
+names = ["Jake", "Zac", "Ian", "Ron", "Sam", "Dave"] # List of names.
+def search_name(person): # A function to get the name in the list
+    if person in names:
+        return f"Perfect! {person.capitalize()} is in the list." # If the user_input is in the list, then this will display with the first letter in caps.
+    else:
+        return f"Sadly, {person.capitalize()} is not in the list." # If the user_input is not in the list, then this will display with anything the user inputs as the first letter in caps.
+
+user_input = input("Enter the name you want to search: ")# Ask for a name and checks if its on the list called "names".
+result = search_name(user_input.capitalize()) # The user_input will display and will have the first letter in caps.
+print(result)

@@ -1,5 +1,5 @@
 # Exercise 8: Simple Search - 30 Marks.
-print("Exercise 8: Simple Search - 30 Marks.")
+
 names = ["Jake", "Zac", "Ian", "Ron", "Sam", "Dave"] # List of names.
 def search_name(person): # A function to get the name in the list
     if person in names:

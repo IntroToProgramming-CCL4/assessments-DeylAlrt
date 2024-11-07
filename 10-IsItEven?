@@ -1,0 +1,14 @@
+# Exercise 10: Is it even? - 35 Marks.
+print("Exercise 10: Is it even? - 35 Marks.")
+def odd_even(number):
+    if number % 2 == 0:
+        return f"The {number} is even."
+    else:
+        return f"The {number} is odd."
+
+try: # This statement allows you to write a code that might raise an error without crashing the program.  
+    number = int(input("Enter a number to check if it's a even or odd number: "))
+    result = odd_even(number)
+    print(result)
+except ValueError: # This function executes when the user types anything other than a number.
+    print("Invalid! Numbers only.")

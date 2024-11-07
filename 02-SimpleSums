@@ -1,0 +1,6 @@
+# Exercise 2: Simple Sums - 15 Marks.
+print("Exercise 2: Simple Sums - 15 Marks")
+a = 8 
+b = 10
+sum = a + b
+print(sum)

@@ -1,0 +1,37 @@
+# Exercise 3: Biography - 25 Marks.
+print("Exercise 3: Biography - 25 Marks")
+name = "Dale Alerta"
+age = 18
+hometown = "Philippine"
+
+# Asks what is the specific name to continue.
+while True:
+    user_input = input("Enter authorized name: ").lower()   
+    
+    if user_input == "Dale Alerta".lower():
+        print("Logging-in...")
+        break # Finishes the loop if the name is the input
+    else:
+         print("No data.")
+
+# Asks what is the specific age to continue.
+while True:
+    try: # This statement allows you to write a code that might raise an error without crashing the program.
+        age = int(input("To proceed, input age: "))
+    
+        if age == 18:
+            print("Getting data...")
+            break # Finishes the loop until 18 is the input
+        else:
+            print("No data.")
+    except ValueError: # This function executes when the user types anything other than a number.
+        print("Please enter in digits only.")
+
+while True:
+    user_input = input("Where are you from?: ").lower()
+
+    if user_input == "Philippine".lower():
+        print(f"Access Granted.\nLog in details:\nName: {name}\nAge: {age}\nHometown: {hometown}")
+        break
+    else:
+        print("No data.")

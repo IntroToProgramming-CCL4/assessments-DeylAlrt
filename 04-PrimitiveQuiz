@@ -1,5 +1,5 @@
 # Exercise 4: Primitive Quiz - 30 Marks.
-print("Exercise 4: Primitive Quiz - 30 Marks")
+
 answers = ["Paris", "Athens", "Madrid", "London", "Brussels", "Berlin",
         "Oslo", "Amsterdam", "Vienna", "Monaco", "Andorra la Vella", "Helsinki",
         "Dublin", "Tirana"]

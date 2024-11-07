@@ -1,0 +1,30 @@
+# Exercise 5: Days of the Month - 30 Marks.
+print("Exercise 5: Days of the Month - 30 Marks")
+
+# List of the months.
+calendar = {
+ '1': '31',  # January
+ '2': '28',  # February 
+ '3': '31',  # March
+ '4': '30',  # April
+ '5': '31',  # May
+ '6': '30',  # June
+ '7': '31',  # July
+ '8': '31',  # August
+ '9': '30',  # September
+ '10': '31',  # October
+ '11': '30',  # November
+ '12': '31'   # December
+}
+
+while True:
+    try: # This statement allows you to write a code that might raise an error without crashing the program.
+       month = int(input("Enter a month in numbers: "))
+       if month <= 12:                   
+            print(f"The month {month} has {calendar[str(month)]} days.") # Converts a integer to a string.
+            break
+       elif month >=12: 
+            print("There are 12 months only!")
+    except ValueError:  # This function executes when the user types anything other than a number.
+        print("Invalid! Digits only.")
+        continue

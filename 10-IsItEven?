@@ -1,5 +1,5 @@
 # Exercise 10: Is it even? - 35 Marks.
-print("Exercise 10: Is it even? - 35 Marks.")
+
 def odd_even(number):
     if number % 2 == 0:
         return f"The {number} is even."
